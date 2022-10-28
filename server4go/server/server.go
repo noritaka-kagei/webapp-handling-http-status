@@ -9,6 +9,7 @@ import (
 	"syscall"
 )
 
+var host = "localhost"
 var port = 8080
 
 func Run() os.Signal {
@@ -21,7 +22,7 @@ func Run() os.Signal {
 	logger.Println("Setting web server is completed!!")
 
 	logger.Println("Server is running...")
-	if err := http.ListenAndServe(fmt.Sprintf(":%d", port), nil); err != nil {
+	if err := http.ListenAndServe(fmt.Sprintf("%s:%d", host, port), nil); err != nil {
 		logger.Printf("failed to run web server. (%s)\n", err.Error())
 		logger.Println("Server is shutting down...")
 		return nil
@@ -34,7 +35,7 @@ func Run() os.Signal {
 
 func rootHandler(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(200)
-	content := fmt.Sprintf("You can get response with HTTP status XXX when you access to localhost:%d/XXX via HTTP protocol.\n", port)
-	content += fmt.Sprintf("You can show avaiable path(XXX) by /NXX that prefix of hundreds place. (ex. localhost:%d/2XX)\n", port)
+	content := fmt.Sprintf("You can get response with HTTP status XXX when you access to \"%s:%d/XXX\" via HTTP protocol.\n", host, port)
+	content += fmt.Sprintf("You can show avaiable path(XXX) by /NXX that prefix of hundreds place. (ex. %s:%d/2XX)\n", host, port)
 	w.Write([]byte(content))
 }

@@ -3,8 +3,10 @@ package server
 import "net/http"
 
 func Set2XX() {
+	// index of HTTP status 200~226
 	http.HandleFunc("/2XX", twoHundredHandler)
 	http.HandleFunc("/2xx", twoHundredHandler)
+
 	// 200 ~ 226
 	http.HandleFunc("/200", okHandler)
 	http.HandleFunc("/201", createdHandler)

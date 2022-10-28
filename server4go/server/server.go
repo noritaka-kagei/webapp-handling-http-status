@@ -17,6 +17,7 @@ func Run() os.Signal {
 	logger.Println("Setting web server...")
 	http.HandleFunc("/", rootHandler)
 	Set2XX()
+	Set3XX()
 	logger.Println("Setting web server is completed!!")
 
 	logger.Println("Server is running...")

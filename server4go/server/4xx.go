@@ -1,3 +1,8 @@
+/*
+ * This file handling HTTP response status based URI parameter
+ * Target HTTP response status: Client error responses (400 - 499)
+ */
+
 package server
 
 import "net/http"

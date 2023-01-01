@@ -1,3 +1,8 @@
+/*
+ * This file handling HTTP response status based URI parameter
+ * Target HTTP response status: Redirection messages (300 - 399)
+ */
+
 package server
 
 import "net/http"

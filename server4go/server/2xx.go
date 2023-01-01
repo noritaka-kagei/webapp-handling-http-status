@@ -1,3 +1,8 @@
+/*
+ * This file handling HTTP response status based URI parameter
+ * Target HTTP response status: Successful responses (200 - 299)
+ */
+
 package server
 
 import "net/http"

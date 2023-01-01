@@ -28,7 +28,7 @@ func Set5XX() {
 
 func fiveHundredHandler(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(200)
-	content := "You can access following HTTP status (2XX)\n"
+	content := "You can access following HTTP status (5XX)\n"
 	content += "500, 501, 502, 503, 504, 505, 506, 507, 508,\n"
 	content += "510, 511\n"
 	w.Write([]byte(content))

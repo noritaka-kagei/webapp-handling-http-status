@@ -20,5 +20,5 @@ Content-Length: 0
 1. Build application
   $ ./scripts/build.sh
 2. Run
-  $ ./bin/run-linux
+  $ ./bin/run-linux-amd64
 ```

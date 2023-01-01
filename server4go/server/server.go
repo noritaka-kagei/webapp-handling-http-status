@@ -20,6 +20,7 @@ func Run() os.Signal {
 	Set2XX()
 	Set3XX()
 	Set4XX()
+	Set5XX()
 	logger.Println("Setting web server is completed!!")
 
 	logger.Println("Server is running...")

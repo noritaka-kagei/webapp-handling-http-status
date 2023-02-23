@@ -1,5 +1,5 @@
 [![GitHub release](https://img.shields.io/github/release/noritaka-kagei/webapp-handling-http-status.svg)](https://github.com/noritaka-kagei/webapp-handling-http-status/releases/latest)
-[![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/noritaka-kagei/webapp-handling-http-status.svg)](https://github.com/noritaka-kagei/webapp-handling-http-status/blob/main/server4go)
+<!-- [![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/noritaka-kagei/webapp-handling-http-status.svg)](https://github.com/noritaka-kagei/webapp-handling-http-status/blob/main/server4go) -->
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/noritaka-kagei/webapp-handling-http-status/blob/main/LICENSE)
 
 
